@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>King Dal dan Dunia Pixel</title>
+
+<style>
+body {
+    background: black;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+    padding: 20px;
+}
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background: cyan;
+    font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<h1>King Dal dan Dunia Pixel</h1>
+
+<p>Petualangan dimulai... 🔥</p>
+
+<!-- 🎵 Musik Background -->
+<<audio id="bgm" controls loop>
+    <source src="musik.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="playMusic()">Play Musik</button>
+<button onclick="pauseMusic()">Pause Musik</button>
+
+<script>
+const music = document.getElementById("bgm");
+
+function playMusic(){
+    music.play();
+}
+
+function pauseMusic(){
+    music.pause();
+}
+</script>
+
+</body>
+</html>
